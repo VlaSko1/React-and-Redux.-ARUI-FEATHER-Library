@@ -1,18 +1,31 @@
+@import "~arui-feather/main.css";
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.row {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  max-width: 768px;
+  
+}
+.row-flex {
+  display: flex;
+  justify-content: center;
+}
+.col {
+  padding: 0 16px;
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input__top{
+  text-align: left;
 }
 
+
+table {
+  width: 100%;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
