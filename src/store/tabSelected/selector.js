@@ -1,0 +1,1 @@
+export const getTabSelected = (state) => state.tabSelected.tabSelected;
