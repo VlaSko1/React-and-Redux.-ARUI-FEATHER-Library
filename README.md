@@ -1,3 +1,9 @@
+В данном проекте реализовано создание простейшего приложения для подсчета бюджета на текущий день, текущего месяца с учетом введённых расходов и доходов. 
+В проекте используются следующие сторонние библиотеки: ARUI-Feather (от Альфа-банка), moment, lodash, env-cmd, firebase (для хранения данных в БД firebase).
+Проект создан с помощью React Create App, испльзуется Redux.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
