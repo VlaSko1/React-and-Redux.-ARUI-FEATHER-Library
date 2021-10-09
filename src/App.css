@@ -12,7 +12,9 @@
 .row-flex {
   display: flex;
   justify-content: center;
+  position: relative;
 }
+
 .col {
   padding: 0 16px;
   
@@ -41,11 +43,85 @@ table {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+/*----------------------Окно ошибки заполнения полей ввода*/
+.message__container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.message__error {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #B0E0E6;
+  z-index: 5;
+  opacity: 0.9;
+  
+}
+.message__error_container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.closeMini {
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  width: 14px;
+  height: 14px;
+  opacity: 0.6;
+}
+.closeMini:hover {
+  opacity: 1;
+}
+.closeMini:before, .closeMini:after {
+  position: absolute;
+  left: 7px;
+  content: ' ';
+  height: 14px;
+  width: 1px;
+  background-color: red;
+}
+.closeMini:before {
+  transform: rotate(45deg);
+}
+.closeMini:after {
+  transform: rotate(-45deg);
+}
+
+/* Удаление записи расхода/дохода */
+
+.delete {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.close {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  opacity: 0.3;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 24px;
+  width: 2px;
+  background-color: #DC143C;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
 }
